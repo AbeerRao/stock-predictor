@@ -5,7 +5,7 @@
 ## 2. Enhance API call:
      Add time frame => DONE
      Add user input => DONE
-     Add check to remove the extra dictionary
+     Add check to remove the extra dictionary => DONE
 
 ## 3. Make fontend page
 
