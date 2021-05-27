@@ -1,4 +1,5 @@
 import requests
+import json
 
 
 def getUserInput():
@@ -15,12 +16,16 @@ def getResponse(symbol, timeFrame):
      'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
      }
      response = requests.request("GET", url, headers=headers, params=querystring).json()
-     responseTF = response["prices"][: timeFrame]
+     responseTF = response["prices"][ : timeFrame]
+     responseFinal = []
      for rtf in responseTF:
-          if 'type' in rtf:
+          if 'open' not in rtf:
                pass
           else:
-               print(f"Date: {rtf['date']}\tOpening Price: {rtf['open']}\tClosing Price: {rtf['close']}")
+               responseFinal.append(rtf)
+     responseFinalFinal = json.dumps(responseFinal)
+     with open("data.json", "w") as f:
+          f.write(responseFinalFinal)
 
 
 if __name__ == '__main__':
