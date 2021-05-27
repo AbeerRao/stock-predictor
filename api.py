@@ -1,5 +1,6 @@
 import requests
 import json
+import datetime
 
 
 def getUserInput():
@@ -22,6 +23,8 @@ def getResponse(symbol, timeFrame):
           if 'open' not in rtf:
                pass
           else:
+               rtf['date'] = datetime.datetime.fromtimestamp(rtf['date']).strftime('%Y-%m-%d')
+               print(rtf['date'])
                responseFinal.append(rtf)
      responseFinalFinal = json.dumps(responseFinal)
      with open("data.json", "w") as f:
