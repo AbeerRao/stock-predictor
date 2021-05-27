@@ -11,7 +11,10 @@
 </head>
 
 <body>
-     <h1>This is the home page for the stock predictor!!</h1>
+     {% for d in data %}
+     <h1>{{ d['date'] }}</h1>
+     {% endfor %}
+     <h1>{{ data }}</h1>
 </body>
 
 </html>
