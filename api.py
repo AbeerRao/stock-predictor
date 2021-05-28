@@ -17,14 +17,13 @@ def getResponse(symbol, timeFrame):
      'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
      }
      response = requests.request("GET", url, headers=headers, params=querystring).json()
-     responseTF = response["prices"][ : timeFrame]
+     responseTF = response["prices"][:timeFrame]
      responseFinal = []
      for rtf in responseTF:
           if 'open' not in rtf:
                pass
           else:
                rtf['date'] = datetime.datetime.fromtimestamp(rtf['date']).strftime('%Y-%m-%d')
-               print(rtf['date'])
                responseFinal.append(rtf)
      responseFinalFinal = json.dumps(responseFinal)
      with open("data.json", "w") as f:

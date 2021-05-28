@@ -1,0 +1,44 @@
+.body {
+     display: grid;
+     place-items: center;
+     background-color: #dadbd3;
+     height: 100vh;
+}
+
+.body__div {
+     display: flex;
+     width: 90vw;
+     height: 90vh;
+     background-color: #ededed;
+     box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.2);
+     padding: 20px;
+     border-radius: 10px;
+}
+
+.all__data {
+     background-color: #f2fcfd;
+     border-radius: 10px;
+     padding: 20px;
+     display: table;
+     overflow: auto;
+     margin-top: auto;
+     margin-bottom: auto;
+}
+
+table {
+     /* overflow-y: scroll; */
+     display: table-row;
+     font-family: arial, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+}
+   
+td, th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+}
+   
+tr:nth-child(even) {
+     background-color: #dddddd;
+}

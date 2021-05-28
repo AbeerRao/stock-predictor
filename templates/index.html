@@ -7,14 +7,33 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="/static/css/main.css">
      <title>Home Page</title>
 </head>
 
-<body>
-     {% for d in data %}
-     <h1>{{ d['date'] }}</h1>
-     {% endfor %}
-     <h1>{{ data }}</h1>
+<body class="body">
+     <div class="body__div">
+          <div class="all__data">
+               <table>
+                    <tr>
+                         <th>Date</th>
+                         <th>Open</th>
+                         <th>High</th>
+                         <th>Low</th>
+                         <th>Close</th>
+                    </tr>
+                    {% for d in data %}
+                    <tr>
+                         <td>{{ d.date }}</td>
+                         <td>{{ d.open }}</td>
+                         <td>{{ d.high }}</td>
+                         <td>{{ d.low }}</td>
+                         <td>{{ d.close }}</td>
+                    </tr>
+                    {% endfor %}
+               </table>
+               </div>
+               </div>
 </body>
 
 </html>
