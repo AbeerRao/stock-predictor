@@ -7,7 +7,7 @@
      Add user input => DONE
      Add check to remove the extra dictionary => DONE
 
-## 3. Make fontend page
+## 3. Make fontend page => DONE
 
 ## 4. Make prediction algorithm ( profit y/n )
 
