@@ -9,7 +9,7 @@
 
 ## 3. Make fontend page => DONE
 
-## 4. Make prediction algorithm ( profit y/n )
+## 4. Make prediction algorithm ( profit y/n ) => DONE
 
 ## 5. Display prediction
 
