@@ -1,5 +1,5 @@
 from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import confusion_matrix, accuracy_score
 import numpy as np
@@ -20,7 +20,7 @@ sc = StandardScaler()
 x_train[:, :] = sc.fit_transform(x_train[:, :])
 x_test[:, :] = sc.transform(x_test[:, :])
 
-classifer = DecisionTreeClassifier(random_state=0, max_depth=5)
+classifer = RandomForestClassifier(n_estimators = 10, criterion = 'entropy', random_state = 0)
 classifer.fit(x_train, y_train)
 
 # y_pred = classifer.predict(x_test)
