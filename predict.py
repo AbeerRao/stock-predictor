@@ -20,7 +20,7 @@ sc = StandardScaler()
 x_train[:, :] = sc.fit_transform(x_train[:, :])
 x_test[:, :] = sc.transform(x_test[:, :])
 
-classifer = sklearn.svm.SVC(kernel = 'linear', random_state = 0)
+classifer = sklearn.svm.SVC(kernel = 'rbf', random_state = 0)
 classifer.fit(x_train, y_train)
 
 # y_pred = classifer.predict(x_test)
