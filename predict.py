@@ -1,5 +1,5 @@
 from sklearn.model_selection import train_test_split
-import sklearn.svm
+from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import confusion_matrix, accuracy_score
 import numpy as np
@@ -20,7 +20,7 @@ sc = StandardScaler()
 x_train[:, :] = sc.fit_transform(x_train[:, :])
 x_test[:, :] = sc.transform(x_test[:, :])
 
-classifer = sklearn.svm.SVC(kernel = 'rbf', random_state = 0)
+classifer = GaussianNB()
 classifer.fit(x_train, y_train)
 
 # y_pred = classifer.predict(x_test)
