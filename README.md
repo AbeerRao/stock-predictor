@@ -1,18 +1,18 @@
 # Todo
 
-## 1. Make basic API call => DONE
+- [X] ## 1. Make basic API call
 
-## 2. Enhance API call:
-     Add time frame => DONE
-     Add user input => DONE
-     Add check to remove the extra dictionary => DONE
+- [X] ## 2. Enhance API call:
+     Add time frame
+     Add user input
+     Add check to remove the extra dictionary
 
-## 3. Make fontend page => DONE
+- [X] ## 3. Make fontend page
 
-## 4. Make prediction algorithm ( profit y/n ) => DONE
+- [X] ## 4. Make prediction algorithm ( profit y/n )
 
-## 5. Display prediction
+- [] ## 5. Display prediction
 
-## 6. ?? -> Make numerical prediction ( tomorrow close price )
+- [] ## 6. ?? -> Make numerical prediction ( tomorrow close price )
 
-## 7. ?? -> Display prediction
+- [] ## 7. ?? -> Display prediction
