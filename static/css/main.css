@@ -5,7 +5,7 @@
      height: 100vh;
 }
 
-.body__div {
+.body__div__data {
      display: flex;
      width: 90vw;
      height: 90vh;
@@ -13,6 +13,18 @@
      box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.2);
      padding: 20px;
      border-radius: 10px;
+}
+
+.body__div {
+     width: 90vw;
+     height: 90vh;
+     background-color: #ededed;
+     box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.2);
+     padding: 20px;
+     border-radius: 10px;
+     display: grid;
+     place-items: center;
+     height: 100%;
 }
 
 .all__data {
@@ -68,18 +80,39 @@ tr th {
      background-color: #dddddd;
 }
 
-/* table {
-     font-family: arial, sans-serif;
-     border-collapse: collapse;
-     width: 100%;
+form {
+     display: flex;
+     flex-direction: column;
 }
-   
-td, th {
-     border: 1px solid #dddddd;
-     text-align: left;
-     padding: 8px;
+
+.symbol {
+     flex: 1;
+     border-radius: 30px;
+     padding: 10px;
+     border: none;
+     margin-left: 10px;
+     margin-right: 10px;
 }
-   
-tr:nth-child(even) {
-     background-color: #dddddd;
-} */
+
+.time {
+     flex: 1;
+     border-radius: 30px;
+     padding: 10px;
+     border: none;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+
+.symbol__div {
+     margin-bottom: 10px;
+}
+
+.search__div {
+     font-size: 30px;
+}
+
+.btn-primary {
+     margin-top: 10px !important;
+     font-size: 30px !important;
+     width: 200px !important;
+}
