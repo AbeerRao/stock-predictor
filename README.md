@@ -11,7 +11,7 @@
 
 - [X] 4. Make prediction algorithm ( profit y/n )
 
-- [ ] 5. Display prediction
+- [X] 5. Display prediction
 
 - [ ] 6. ?? -> Make numerical prediction ( tomorrow close price )
 
