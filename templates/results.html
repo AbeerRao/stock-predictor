@@ -36,6 +36,18 @@
                     </tbody>
                </table>
           </div>
+          <div class="pred__data">
+               <h1>Algorithm's work:</h1>
+               <p>Confusion Matrix predicting decline: {{ pred_data[1][0] }}</p>
+               <p>Confusion Matrix predicting incline: {{ pred_data[1][1] }}</p>
+               <p>Prediction accuracy: {{ pred_data[-1] }}</p>
+               <h3>Tomorrow's price prediction:</h3>
+               {% if pred_data[0] == 0 %}
+               <h6>Price will decline as compared to last close price</h6>
+               {% else %}
+               <h6>Price will incline as compared to last close price</h6>
+               {% endif %}
+          </div>
      </div>
      {% else %}
      <div class="body__div">
