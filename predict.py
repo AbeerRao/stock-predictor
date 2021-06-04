@@ -1,5 +1,4 @@
 from sklearn.model_selection import train_test_split
-import sklearn.svm
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import confusion_matrix, accuracy_score
 import numpy as np
